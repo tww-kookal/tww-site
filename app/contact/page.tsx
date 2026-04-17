@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CONTACT_INFO, RESORT_NAME } from "@/lib/constants";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -51,10 +52,15 @@ export default function ContactPage() {
       
       {/* Header */}
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/photos/around-the-westwood/misty-road-kookal.jpg')" }}
-        >
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/photos/around-the-westwood/misty-road-kookal.jpg"
+            alt="Misty Road to Kookal"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 text-center text-white space-y-4 px-6">

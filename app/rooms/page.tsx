@@ -15,10 +15,15 @@ export default function RoomsPage() {
       
       {/* Header */}
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/photos/in-the-westwood/misty-view.jpg')" }}
-        >
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/photos/in-the-westwood/misty-view.jpg"
+            alt="Misty Mountain View"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 text-center text-white space-y-4 px-6">

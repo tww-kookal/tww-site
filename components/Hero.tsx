@@ -6,16 +6,21 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-10000 scale-110"
-        style={{ 
-          backgroundImage: "url('/photos/in-the-westwood/the-westwood-day-view-1.jpg')",
-        }}
-      >
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/photos/in-the-westwood/the-westwood-day-view-1.jpg"
+          alt="The Westwood Resort Day View"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center transition-transform duration-10000 scale-110"
+        />
         <div className="absolute inset-0 bg-black/40 z-10" />
       </div>
 

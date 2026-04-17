@@ -23,10 +23,15 @@ export default function GalleryPage() {
       
       {/* Header */}
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/photos/in-the-westwood/the-westwood-night-view-1.jpg')" }}
-        >
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/photos/in-the-westwood/the-westwood-night-view-1.jpg"
+            alt="The Westwood Night View"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 text-center text-white space-y-4 px-6">

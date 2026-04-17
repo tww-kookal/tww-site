@@ -51,10 +51,15 @@ export default function ExperiencePage() {
       
       {/* Header */}
       <section className="relative h-[50vh] flex items-center justify-center pt-20 overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/photos/around-the-westwood/vegetation-view.jpg')" }}
-        >
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/photos/around-the-westwood/vegetation-view.jpg"
+            alt="Western Ghats Vegetation"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 text-center text-white space-y-4 px-6">

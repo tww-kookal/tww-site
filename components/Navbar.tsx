@@ -39,6 +39,7 @@ export default function Navbar() {
             sizes="(max-w-768px) 100vw, 160px"
             className="object-contain object-left"
             priority
+            loading="eager"
           />
         </Link>
 
