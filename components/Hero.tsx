@@ -6,14 +6,14 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-import Image from "next/image";
+import NextImage from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <NextImage
           src="/photos/in-the-westwood/the-westwood-day-view-1.jpg"
           alt="The Westwood Resort Day View"
           fill

@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
-import Image from "next/image";
+import NextImage from "next/image";
 import { ROOMS, CONTACT_INFO } from "@/lib/constants";
 import { Check, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -16,7 +16,7 @@ export default function RoomsPage() {
       {/* Header */}
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <NextImage
             src="/photos/in-the-westwood/misty-view.jpg"
             alt="Misty Mountain View"
             fill
@@ -44,7 +44,7 @@ export default function RoomsPage() {
             >
               {/* Image */}
               <div className="w-full lg:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
-                <Image 
+                <NextImage 
                   src={room.image} 
                   alt={room.name}
                   fill

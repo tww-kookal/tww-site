@@ -4,7 +4,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
-import Image from "next/image";
+import NextImage from "next/image";
 import { GALLERY_IMAGES } from "@/lib/constants";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -24,7 +24,7 @@ export default function GalleryPage() {
       {/* Header */}
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <NextImage
             src="/photos/in-the-westwood/the-westwood-night-view-1.jpg"
             alt="The Westwood Night View"
             fill
@@ -78,7 +78,7 @@ export default function GalleryPage() {
                   transition={{ duration: 0.4 }}
                   className="relative group rounded-3xl overflow-hidden shadow-xl cursor-pointer"
                 >
-                  <Image 
+                  <NextImage 
                     src={img.src} 
                     alt={img.alt}
                     width={800}

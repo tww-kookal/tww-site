@@ -1,5 +1,6 @@
 "use client";
 
+import NextImage from "next/image";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,7 +12,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CONTACT_INFO, RESORT_NAME } from "@/lib/constants";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -53,7 +53,7 @@ export default function ContactPage() {
       {/* Header */}
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <NextImage
             src="/photos/around-the-westwood/misty-road-kookal.jpg"
             alt="Misty Road to Kookal"
             fill

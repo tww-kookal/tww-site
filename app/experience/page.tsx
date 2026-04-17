@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
-import Image from "next/image";
+import NextImage from "next/image";
 import { EXPERIENCES } from "@/lib/constants";
 import { Trees, UtensilsCrossed, Flame, Moon, Compass, Sparkles } from "lucide-react";
 
@@ -52,7 +52,7 @@ export default function ExperiencePage() {
       {/* Header */}
       <section className="relative h-[50vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
+          <NextImage
             src="/photos/around-the-westwood/vegetation-view.jpg"
             alt="Western Ghats Vegetation"
             fill
@@ -80,7 +80,7 @@ export default function ExperiencePage() {
                 className="space-y-6 group"
               >
                 <div className="relative h-[300px] rounded-3xl overflow-hidden shadow-lg">
-                  <Image 
+                  <NextImage 
                     src={exp.image} 
                     alt={exp.title}
                     fill
