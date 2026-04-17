@@ -6,7 +6,7 @@ import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { RESORT_NAME, NAV_LINKS, CONTACT_INFO, LOGOS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import NextImage from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ export default function Navbar() {
           href="/" 
           className="relative h-12 w-40 transition-opacity duration-300 hover:opacity-90"
         >
-          <Image
+          <NextImage
             src={scrolled ? LOGOS.dark : LOGOS.light}
             alt={RESORT_NAME}
             fill

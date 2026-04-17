@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import NextImage from "next/image";
 import Link from "next/link";
 import { Check, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -52,7 +52,7 @@ export default function Rooms() {
               <Card className="overflow-hidden border-none shadow-2xl rounded-3xl group bg-background">
                 <CardContent className="p-0 flex flex-col">
                   <div className="relative h-[350px] overflow-hidden">
-                    <Image 
+                    <NextImage 
                       src={room.image} 
                       alt={room.name}
                       fill

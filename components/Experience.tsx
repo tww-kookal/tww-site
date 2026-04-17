@@ -2,7 +2,7 @@
 
 import { Trees, UtensilsCrossed, ShieldCheck, Gamepad2 } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import NextImage from "next/image";
 
 const EXPERIENCES = [
   {
@@ -63,7 +63,7 @@ export default function Experience() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative h-[400px] overflow-hidden rounded-2xl shadow-lg cursor-pointer"
             >
-              <Image 
+              <NextImage 
                 src={exp.image} 
                 alt={exp.title}
                 fill
