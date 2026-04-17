@@ -21,6 +21,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "The Westwood | Luxury Resort in Kookal",
   description: "Stay in Swiss-style wooden cabins amidst the Western Ghats with forest views and homemade food.",
+  icons: {
+    icon: "/photos/logo/w-logo.jpg",
+    apple: "/photos/logo/0.jpg",
+  },
 };
 
 export default function RootLayout({

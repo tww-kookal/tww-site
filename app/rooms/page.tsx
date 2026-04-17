@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import Image from "next/image";
-import { ROOMS } from "@/lib/constants";
-import { Check, ArrowRight } from "lucide-react";
+import { ROOMS, CONTACT_INFO } from "@/lib/constants";
+import { Check, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -43,6 +43,7 @@ export default function RoomsPage() {
                   src={room.image} 
                   alt={room.name}
                   fill
+                  sizes="(max-w-1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute top-6 left-6 flex flex-col gap-2">
@@ -79,10 +80,26 @@ export default function RoomsPage() {
                 </div>
 
                 <div className="pt-6 border-t border-muted flex flex-col sm:flex-row items-center justify-between gap-6">
-                  <div className="space-y-1">
-                    <span className="text-sm opacity-60 block text-center sm:text-left">Starting from</span>
-                    <span className="text-3xl font-bold text-secondary">{room.price}</span>
-                    <span className="text-sm opacity-60"> / night</span>
+                  <div className="flex flex-col items-center sm:items-start gap-2">
+                    <span className="text-xs font-bold uppercase tracking-widest opacity-60">Call or Text for Pricing</span>
+                    <div className="flex gap-3">
+                      <a 
+                        href={`tel:${CONTACT_INFO.phone.replace(/\s+/g, '')}`}
+                        className="p-3 bg-secondary/10 text-secondary rounded-full hover:bg-secondary hover:text-white transition-all transform hover:scale-110"
+                        title="Call for price"
+                      >
+                        <Phone size={20} />
+                      </a>
+                      <a 
+                        href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}?text=Hi, I'd like to know the price for the ${room.name} cabin.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 bg-green-600/10 text-green-600 rounded-full hover:bg-green-600 hover:text-white transition-all transform hover:scale-110"
+                        title="WhatsApp for price"
+                      >
+                        <MessageCircle size={20} />
+                      </a>
+                    </div>
                   </div>
                   <Link 
                     href="/contact" 

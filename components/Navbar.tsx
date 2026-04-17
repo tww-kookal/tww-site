@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { RESORT_NAME, NAV_LINKS, CONTACT_INFO } from "@/lib/constants";
+import { RESORT_NAME, NAV_LINKS, CONTACT_INFO, LOGOS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,12 +30,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link 
           href="/" 
-          className={cn(
-            "text-2xl font-heading font-bold tracking-tight transition-colors duration-300",
-            scrolled ? "text-primary" : "text-white drop-shadow-md"
-          )}
+          className="relative h-12 w-40 transition-opacity duration-300 hover:opacity-90"
         >
-          {RESORT_NAME}
+          <Image
+            src={scrolled ? LOGOS.dark : LOGOS.light}
+            alt={RESORT_NAME}
+            fill
+            sizes="(max-w-768px) 100vw, 160px"
+            className="object-contain object-left"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

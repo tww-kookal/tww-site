@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Phone, Mail, MapPin, MessageCircle, Send } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Send, Instagram } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
@@ -82,9 +82,10 @@ export default function ContactPage() {
                 <div className="p-3 bg-secondary/10 rounded-full w-fit text-secondary">
                   <Phone size={24} />
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <h3 className="font-bold font-heading">Call Us</h3>
-                  <a href={`tel:${CONTACT_INFO.phone}`} className="text-sm opacity-70 hover:text-primary transition-colors">{CONTACT_INFO.phone}</a>
+                  <a href={`tel:${CONTACT_INFO.phone.replace(/\s+/g, '')}`} className="text-sm opacity-70 hover:text-primary transition-colors">{CONTACT_INFO.phone}</a>
+                  <a href={`tel:${CONTACT_INFO.alternatePhone.replace(/\s+/g, '')}`} className="text-sm opacity-70 hover:text-primary transition-colors">{CONTACT_INFO.alternatePhone}</a>
                 </div>
               </div>
               
@@ -92,7 +93,7 @@ export default function ContactPage() {
                 <div className="p-3 bg-green-600/10 rounded-full w-fit text-green-600">
                   <MessageCircle size={24} />
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <h3 className="font-bold font-heading">WhatsApp</h3>
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-sm opacity-70 hover:text-primary transition-colors">Chat with us now</a>
                 </div>
@@ -102,17 +103,28 @@ export default function ContactPage() {
                 <div className="p-3 bg-primary/10 rounded-full w-fit text-primary">
                   <Mail size={24} />
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <h3 className="font-bold font-heading">Email</h3>
                   <a href={`mailto:${CONTACT_INFO.email}`} className="text-sm opacity-70 hover:text-primary transition-colors">{CONTACT_INFO.email}</a>
+                  <a href={`mailto:${CONTACT_INFO.alternateEmail}`} className="text-sm opacity-70 hover:text-primary transition-colors truncate max-w-[200px]" title={CONTACT_INFO.alternateEmail}>{CONTACT_INFO.alternateEmail}</a>
                 </div>
               </div>
 
               <div className="space-y-4">
+                <div className="p-3 bg-pink-600/10 rounded-full w-fit text-pink-600">
+                  <Instagram size={24} />
+                </div>
+                <div className="flex flex-col">
+                  <h3 className="font-bold font-heading">Instagram</h3>
+                  <a href={CONTACT_INFO.instagram} target="_blank" rel="noopener noreferrer" className="text-sm opacity-70 hover:text-primary transition-colors">@thewestwoodkookal</a>
+                </div>
+              </div>
+
+              <div className="space-y-4 sm:col-span-2">
                 <div className="p-3 bg-accent/10 rounded-full w-fit text-accent">
                   <MapPin size={24} />
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <h3 className="font-bold font-heading">Location</h3>
                   <p className="text-sm opacity-70 leading-relaxed">{CONTACT_INFO.address}</p>
                 </div>

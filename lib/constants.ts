@@ -1,5 +1,12 @@
 export const RESORT_NAME = "The Westwood";
-export const RESORT_LOCATION = "Kookal, Western Ghats, India";
+export const RESORT_LOCATION = "Kookal, Kodaikanal, Tamilnadu, India";
+
+export const LOGOS = {
+  light: "/photos/logo/6.png", // Transparent logo for dark backgrounds
+  dark: "/photos/logo/westwoodlogo2.png", // Main logo for light backgrounds
+  square: "/photos/logo/0.jpg",
+  icon: "/photos/logo/w-logo.jpg",
+};
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -15,9 +22,8 @@ export const ROOMS = [
     name: "Cedar",
     category: "Individual Cabin",
     description: "A cathedral styled swiss wooden cabin. Features a private bedroom with a California King Size Bed and an open bedroom on the first floor with two more California King size beds. Breathtaking 180-degree panoramic forest views from the spacious 200sqft living room and private deck.",
-    price: "₹12,500",
     image: "/photos/cedar/cedar-outer-view-1.JPG",
-    features: ["800 sqft Built-up Space", "3 California King Beds", "180° Panoramic View", "Cathedral Style", "Spacious Living Room", "Private Deck", "Sunrise/Sunset Views", "Heated Bathroom", "Indoor Pantry"],
+    features: ["Max Occupancy: 8 Adults", "Private Campfire Area", "800 sqft Built-up Space", "3 California King Beds", "180° Panoramic View", "Cathedral Style", "Spacious Living Room", "Private Deck", "Sunrise/Sunset Views", "Heated Bathroom", "Indoor Pantry"],
     scarcity: "Premium Individual Cabin",
   },
   {
@@ -25,9 +31,8 @@ export const ROOMS = [
     name: "Pine",
     category: "Individual Cabin",
     description: "An elegant A-frame styled construction offering 600sqft of living space. Includes a private bedroom with a queen-size bed and an open bedroom on the first floor with a California King size bed. Enjoy the mountain air from your private deck.",
-    price: "₹10,500",
     image: "/photos/pine/pine-front-view.jpg",
-    features: ["A-Frame Style", "600 sqft Living Space", "Queen + California King Beds", "Private Deck", "Living Room", "Heated Bathroom", "Indoor Pantry"],
+    features: ["Max Occupancy: 5 Adults", "Private Campfire Area", "A-Frame Style", "600 sqft Living Space", "Queen + California King Beds", "Private Deck", "Living Room", "Heated Bathroom", "Indoor Pantry"],
     scarcity: "Unique A-Frame Design",
   },
   {
@@ -35,9 +40,8 @@ export const ROOMS = [
     name: "Teak",
     category: "Mirrored Twin Cabin",
     description: "A comfortable twin room accommodating up to 3 adults. Features a private living room and shares a deck with its twin, Maple. Perfect for small groups or families wanting a shared yet private experience.",
-    price: "₹8,500",
     image: "/photos/teak/teak-front-1.jpg",
-    features: ["350 sqft Space", "Accommodates 3 Adults", "Shared Deck", "Private Living Room", "Heated Bathroom", "Indoor Pantry"],
+    features: ["Max Occupancy: 3 Adults", "Private Campfire Area", "350 sqft Space", "Shared Deck", "Private Living Room", "Heated Bathroom", "Indoor Pantry"],
     scarcity: "Twin Mirrored Layout",
   },
   {
@@ -45,9 +49,8 @@ export const ROOMS = [
     name: "Maple",
     category: "Mirrored Twin Cabin",
     description: "The identical twin of Teak, offering the same mirrored layout and amenities. Provides a cozy and private living space with a shared deck overlooking the lush greenery.",
-    price: "₹8,500",
     image: "/photos/maple/maple-front-view.jpg",
-    features: ["350 sqft Space", "Accommodates 3 Adults", "Shared Deck", "Private Living Room", "Heated Bathroom", "Indoor Pantry"],
+    features: ["Max Occupancy: 3 Adults", "Private Campfire Area", "350 sqft Space", "Shared Deck", "Private Living Room", "Heated Bathroom", "Indoor Pantry"],
     scarcity: "Twin Mirrored Layout",
   },
   {
@@ -55,9 +58,8 @@ export const ROOMS = [
     name: "Glamp",
     category: "Glamping",
     description: "A cozy 100sqft glamping tent for a true nature immersion. Features two single beds and a private deck, with a separate private bathroom for your convenience.",
-    price: "₹6,500",
     image: "/photos/glamp/20251226_084957.jpg",
-    features: ["100 sqft Glamp", "Two Single Beds", "Private Deck", "Separate Bathroom", "Heated Water", "Indoor Pantry"],
+    features: ["Max Occupancy: 2 Adults", "Private Campfire Area", "100 sqft Glamp", "Two Single Beds", "Private Deck", "Separate Bathroom", "Heated Water", "Indoor Pantry"],
     scarcity: "Unique Nature Experience",
   },
 ];
@@ -76,10 +78,10 @@ export const EXPERIENCES = [
     image: "/photos/cafe/cafe-front-view-1.jpg",
   },
   {
-    title: "In the Westwood",
-    description: "Explore our beautiful campus, with spaces for kids to play, mist-covered views, and magical nights under the stars.",
-    icon: "Home",
-    image: "/photos/in-the-westwood/campus.jpg",
+    title: "Safe & Fun Campus",
+    description: "Ample secure parking for cars and motorcycles. Kids will love our play area with swings, slides, basketball, and badminton courts. Every corner is safe and family-friendly.",
+    icon: "ShieldCheck",
+    image: "/photos/in-the-westwood/kids-playing.jpg",
   },
 ];
 
@@ -113,14 +115,22 @@ export const GALLERY_IMAGES = [
   { src: "/photos/cafe/cafe-dining-area-1.JPG", category: "Food", alt: "Cafe Dining" },
   { src: "/photos/around-the-westwood/kookal-lake.jpg", category: "Forest", alt: "Kookal Lake" },
   { src: "/photos/in-the-westwood/the-westwood-night-view-1.jpg", category: "Night", alt: "Resort at Night" },
+  { src: "/photos/in-the-westwood/1.jpg", category: "Forest", alt: "Mist over Westwood" },
+  { src: "/photos/in-the-westwood/2.jpg", category: "Cabins", alt: "Cabins in the Mist" },
+  { src: "/photos/in-the-westwood/3.jpg", category: "Forest", alt: "Lush Greenery" },
+  { src: "/photos/in-the-westwood/4.jpg", category: "Forest", alt: "Campus Walkway" },
+  { src: "/photos/in-the-westwood/5.jpg", category: "Night", alt: "Cozy Night Vibe" },
   { src: "/photos/cedar/cedar-deck-view.jpg", category: "Forest", alt: "Panoramic View from Cedar" },
   { src: "/photos/in-the-westwood/kids-playing.jpg", category: "Forest", alt: "Kids Play Area" },
 ];
 
 export const CONTACT_INFO = {
-  phone: "+91 98765 43210",
-  whatsapp: "+91 98765 43210",
-  email: "stay@thewestwood.com",
+  phone: "+91 98848 55014",
+  alternatePhone: "+91 98848 55041",
+  whatsapp: "+91 98848 55014",
+  email: "care@thewestwood.in",
+  alternateEmail: "thewestwood.kookal@gmail.com",
   address: "Kookal, Kodaikanal, Tamil Nadu, India",
-  googleMaps: "https://maps.app.goo.gl/xxx",
+  googleMaps: "https://maps.app.goo.gl/fBy8RMb88ZzR5kyU8",
+  instagram: "https://www.instagram.com/thewestwoodkookal/",
 };

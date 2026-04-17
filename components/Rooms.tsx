@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
-import { ROOMS } from "@/lib/constants";
+import { ROOMS, CONTACT_INFO } from "@/lib/constants";
 import { motion } from "framer-motion";
 
 export default function Rooms() {
@@ -56,6 +56,7 @@ export default function Rooms() {
                       src={room.image} 
                       alt={room.name}
                       fill
+                      sizes="(max-w-768px) 100vw, 50vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-6 left-6 flex flex-col gap-2">
@@ -69,17 +70,33 @@ export default function Rooms() {
                   </div>
                   
                   <div className="p-8 space-y-6">
-                    <div className="flex justify-between items-start">
+                    <div className="flex justify-between items-start gap-4">
                       <div className="space-y-2">
                         <h3 className="text-2xl font-bold font-heading text-primary">{room.name}</h3>
                         <p className="text-sm opacity-70 leading-relaxed max-w-md">
                           {room.description}
                         </p>
                       </div>
-                      <div className="text-right">
-                        <span className="text-sm opacity-60 block">Starting from</span>
-                        <span className="text-2xl font-bold text-secondary">{room.price}</span>
-                        <span className="text-sm opacity-60 block">per night</span>
+                      <div className="flex flex-col items-end gap-2 shrink-0">
+                        <span className="text-[10px] font-bold uppercase tracking-wider opacity-60">Get Pricing</span>
+                        <div className="flex gap-2">
+                          <a 
+                            href={`tel:${CONTACT_INFO.phone.replace(/\s+/g, '')}`}
+                            className="p-2 bg-secondary/10 text-secondary rounded-full hover:bg-secondary hover:text-white transition-colors"
+                            title="Call for price"
+                          >
+                            <Phone size={18} />
+                          </a>
+                          <a 
+                            href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}?text=Hi, I'd like to know the price for the ${room.name} cabin.`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-green-600/10 text-green-600 rounded-full hover:bg-green-600 hover:text-white transition-colors"
+                            title="WhatsApp for price"
+                          >
+                            <MessageCircle size={18} />
+                          </a>
+                        </div>
                       </div>
                     </div>
                     

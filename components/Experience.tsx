@@ -1,6 +1,6 @@
 "use client";
 
-import { Trees, UtensilsCrossed, VolumeX, Home } from "lucide-react";
+import { Trees, UtensilsCrossed, ShieldCheck, Gamepad2 } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -9,25 +9,25 @@ const EXPERIENCES = [
     icon: Trees,
     title: "Wake up to forest views",
     description: "Start your day with the mist-covered mountains and the sound of chirping birds.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=2071",
+    image: "/photos/cedar/cedar-deck-view-2.jpg",
   },
   {
     icon: UtensilsCrossed,
     title: "Homemade food like home",
-    description: "Authentic local flavors prepared with love and fresh ingredients from our kitchen.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=2070",
+    description: "Authentic local flavors from The Cafe, prepared with fresh organic ingredients.",
+    image: "/photos/cafe/cafe-dining-area-2.JPG",
   },
   {
-    icon: VolumeX,
-    title: "Silence, peace, and nature",
-    description: "Escape the city noise. Immerse yourself in the tranquility of the Western Ghats.",
-    image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=2070",
+    icon: Gamepad2,
+    title: "Kids Play & Sports",
+    description: "Swings, slides, basketball, and badminton courts for endless fun in a safe environment.",
+    image: "/photos/in-the-westwood/kids-playing.jpg",
   },
   {
-    icon: Home,
-    title: "Private, premium cabins",
-    description: "Exclusive Swiss-style wooden cabins designed for maximum comfort and privacy.",
-    image: "https://images.unsplash.com/photo-1449156001931-929ffbc09975?auto=format&fit=crop&q=80&w=2070",
+    icon: ShieldCheck,
+    title: "Secure On-Site Parking",
+    description: "Ample and safe space for your cars, motorcycles, and bikes within our campus.",
+    image: "/photos/in-the-westwood/campus.jpg",
   },
 ];
 
@@ -67,6 +67,7 @@ export default function Experience() {
                 src={exp.image} 
                 alt={exp.title}
                 fill
+                sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 25vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">

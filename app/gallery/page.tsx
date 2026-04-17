@@ -78,6 +78,7 @@ export default function GalleryPage() {
                     alt={img.alt}
                     width={800}
                     height={600}
+                    sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
                     className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
