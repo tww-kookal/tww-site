@@ -67,16 +67,6 @@ const EXPERIENCES = [
       "/images/in-the-westwood/car-parking-3.jpg"
     ],
   },
-  {
-    icon: Wifi,
-    title: "Always Connected",
-    description: "High-speed campus WiFi reaches rooms, cafe, play area, and glamp so guests can stay connected during staycations or workations.",
-    images: [
-      "/images/in-the-westwood/campus.jpg",
-      "/images/glamp/20251226_084957.jpg",
-      "/images/cafe/cafe-dining-area-1.JPG"
-    ],
-  },
 ];
 
 function ExperienceCard({ exp, index }: { exp: typeof EXPERIENCES[0], index: number }) {
