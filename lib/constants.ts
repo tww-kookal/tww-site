@@ -182,15 +182,43 @@ export const GALLERY_IMAGES = [
   { src: "/images/teak/teak-front-1.jpg", category: "Cabins", alt: "Teak Twin Cabin" },
   { src: "/images/maple/maple-front-view.jpg", category: "Cabins", alt: "Maple Twin Cabin" },
   { src: "/images/glamp/20251226_084957.jpg", category: "Cabins", alt: "Glamp Tent" },
-  { src: "/images/cafe/cafe-dining-area-1.JPG", category: "Food", alt: "Cafe Dining" },
-  { src: "/images/around-the-westwood/kookal-lake.jpg", category: "Forest", alt: "Kookal Lake" },
-  { src: "/images/in-the-westwood/the-westwood-night-view-1.jpg", category: "Night", alt: "Resort at Night" },
-  { src: "/images/in-the-westwood/1.jpg", category: "Forest", alt: "Mist over Westwood" },
   { src: "/images/in-the-westwood/2.jpg", category: "Cabins", alt: "Cabins in the Mist" },
-  { src: "/images/in-the-westwood/3.jpg", category: "Forest", alt: "Lush Greenery" },
-  { src: "/images/in-the-westwood/4.jpg", category: "Forest", alt: "Campus Walkway" },
+  { src: "/images/cedar/cedar-deck-view.jpg", category: "Cabins", alt: "Panoramic View from Cedar" },
+  
+  { src: "/images/cafe/cafe-dining-area-1.JPG", category: "Food", alt: "Cafe Dining" },
+  { src: "/images/cafe/barbeque.jpg", category: "Food", alt: "Barbeque" }, 
+  { src: "/images/cafe/food-cafe-1.jpg", category: "Food", alt: "Dine In" }, 
+  { src: "/images/cafe/food-cafe-3.jpg", category: "Food", alt: "Dine In" }, 
+  { src: "/images/cafe/food-cafe-4.jpg", category: "Food", alt: "Dine In" }, 
+  { src: "/images/cafe/food-cafe-5.jpg", category: "Food", alt: "Dine In" }, 
+
+  { src: "/images/around-the-westwood/falls-kookal-1.jpg", category: "Water Falls", alt: "Kookal Falls" },
+  { src: "/images/around-the-westwood/falls-silver-cascade-1.jpg", category: "Water Falls", alt: "Silver Cascade" },
+  { src: "/images/around-the-westwood/falls-aanaimutti-2.png", category: "Water Falls", alt: "Aanai Mutti Falls" },
+  { src: "/images/around-the-westwood/falls-poomparai-1.jpg", category: "Water Falls", alt: "Poomparai Falls" },
+  { src: "/images/around-the-westwood/falls-aanaimutti-1.png", category: "Water Falls", alt: "Aanai Mutti Falls" },
+
+  { src: "/images/around-the-westwood/grassland-kookal-1.jpg", category: "Grasslands", alt: "Grasslands of Kookal" },
+  { src: "/images/around-the-westwood/grassland-mannavanur-1.jpg", category: "Grasslands", alt: "Greenery of Mannavanur" },
+  { src: "/images/around-the-westwood/grassland-kookal-2.jpg", category: "Grasslands", alt: "Grasslands of Kookal" },
+  
+  { src: "/images/in-the-westwood/the-westwood-night-view-1.jpg", category: "Night", alt: "Resort at Night" },
+  { src: "/images/in-the-westwood/campfire-2.jpg", category: "Night", alt: "Cozy Night Vibe" },
   { src: "/images/in-the-westwood/5.jpg", category: "Night", alt: "Cozy Night Vibe" },
-  { src: "/images/cedar/cedar-deck-view.jpg", category: "Forest", alt: "Panoramic View from Cedar" },
+  { src: "/images/in-the-westwood/campfire-1.jpg", category: "Night", alt: "Night Vibes" },
+
+  { src: "/images/around-the-westwood/temple-kuzhanthai-aandavar-poomparai-1.jpg", category: "Temple", alt: "Kuzhanthai Aandavar" },
+  { src: "/images/around-the-westwood/temple-kuzhanthai-aandavar-poomparai-2.jpg", category: "Temple", alt: "Murugan Temple" },
+
+  { src: "/images/around-the-westwood/valley-view-1.jpg", category: "Valley", alt: "Valley of Western Ghats" },
+  { src: "/images/around-the-westwood/valley-view-2.jpg", category: "Valley", alt: "Valley of Western Ghats" },
+  { src: "/images/around-the-westwood/valley-view-3.jpg", category: "Valley", alt: "Valley of Western Ghats" },
+
+  { src: "/images/around-the-westwood/lake-kookal-1.jpg", category: "Lakes", alt: "Kookal Lake" },
+  { src: "/images/around-the-westwood/lake-mannavanur-1.jpg", category: "Lakes", alt: "Mannavanur Lake - Boating" },
+  { src: "/images/around-the-westwood/lake-boating-star-lake-1.jpg", category: "Lakes", alt: "Star Lake Kodai" },
+  { src: "/images/around-the-westwood/lake-kookal-2.jpg", category: "Lakes", alt: "Kookal Lake" },
+  
   { src: "/images/play-area/bad-1.jpg", category: "Activities", alt: "Badminton Court" },
   { src: "/images/play-area/bad-2.jpg", category: "Activities", alt: "Badminton Court" },
   { src: "/images/play-area/bad-3.jpg", category: "Activities", alt: "Badminton Court" },
@@ -206,7 +234,6 @@ export const GALLERY_IMAGES = [
   { src: "/images/play-area/basket-ball-1.jpeg", category: "Activities", alt: "Basket Ball Court" },
   { src: "/images/play-area/play-slide-1.jpeg", category: "Activities", alt: "Kids Slide" },
   { src: "/images/play-area/play-area-3.jpeg", category: "Activities", alt: "Kids Ladder" },
-  
 
 ];
 

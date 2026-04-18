@@ -8,7 +8,7 @@ import NextImage from "next/image";
 import { GALLERY_IMAGES } from "@/lib/constants";
 import { motion, AnimatePresence } from "framer-motion";
 
-const CATEGORIES = ["All", "Cabins", "Forest", "Food", "Night", "Activities"];
+const CATEGORIES = ["All", "Cabins", "Food", "Night", "Activities", "Lakes", "Grasslands", "Water Falls", "Temple", "Valley"];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");
