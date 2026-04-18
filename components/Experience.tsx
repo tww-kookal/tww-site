@@ -36,13 +36,12 @@ const EXPERIENCES = [
     title: "Kids Play & Sports",
     description: "Swings, slides, basketball, and badminton courts for endless fun in a safe environment.",
     images: [
-      "/images/in-the-westwood/swing-1.jpg",
+      "/images/play-area/swing-1.jpeg",
       "/images/play-area/bad-1.jpg",
       "/images/play-area/kids-see-saw-2.jpeg",
       "/images/play-area/bad-6.jpg",
       "/images/play-area/basket-ball-1.jpeg",
-      "/images/play-area/play-slide-1.jpeg",
-      "/images/play-area/swing-1.jpeg"
+      "/images/play-area/play-slide-1.jpeg"
     ],
   },
   {
