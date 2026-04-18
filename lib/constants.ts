@@ -87,7 +87,6 @@ export const ROOMS = [
       "/images/teak/teak-bathroom-1.jpg",
       "/images/teak/teak-deck-1.jpg",
       "/images/teak/teak-deck-2.jpg",
-      "/images/teak/20250315_073249.jpg",
     ],
     features: ["Max Occupancy: 3 Adults", "Private Campfire Area", "350 sqft Space", "Shared Deck", "Private Living Room", "Heated Bathroom", "Indoor Pantry"],
     scarcity: "Twin Mirrored Layout",
