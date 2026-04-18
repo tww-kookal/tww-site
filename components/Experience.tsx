@@ -12,10 +12,10 @@ const EXPERIENCES = [
     description: "Start your day with the mist-covered mountains and the sound of chirping birds.",
     images: [
       "/images/in-the-westwood/forest-view-morning.jpg",
-      "/images/in-the-westwood/20251226_080451.jpg",
-      "/images/in-the-westwood/20251226_082350.jpg",
-      "/images/in-the-westwood/20251226_082511.jpg",
-      "/images/in-the-westwood/20251226_082941.jpg",
+      "/images/in-the-westwood/forest-view.jpg",
+      "/images/in-the-westwood/parking-view.jpg",
+      "/images/in-the-westwood/forest-view-2.jpg",
+      "/images/in-the-westwood/forest-view-3.jpg",
       "/images/in-the-westwood/misty-view.jpg"
     ],
   },
@@ -36,14 +36,13 @@ const EXPERIENCES = [
     title: "Kids Play & Sports",
     description: "Swings, slides, basketball, and badminton courts for endless fun in a safe environment.",
     images: [
-      "/images/in-the-westwood/kids-playing.jpg",
-      "/images/in-the-westwood/kids-swing.jpg",
-      "/images/play-area/badminton-1.JPG",
-      "/images/play-area/badminton-2.JPG",
-      "/images/play-area/badminton-3.JPG",
-      "/images/play-area/badminton-4.JPG",
-      "/images/play-area/badminton-5.JPG",
-      "/images/play-area/badminton-6.JPG"
+      "/images/in-the-westwood/swing-1.jpg",
+      "/images/play-area/bad-1.jpg",
+      "/images/play-area/kids-see-saw-2.jpeg",
+      "/images/play-area/bad-6.jpg",
+      "/images/play-area/basket-ball-1.jpeg",
+      "/images/play-area/play-slide-1.jpeg",
+      "/images/play-area/swing-1.jpeg"
     ],
   },
   {
@@ -63,10 +62,10 @@ const EXPERIENCES = [
     description: "Ample and safe space for your cars, motorcycles, and bikes within our campus.",
     images: [
       "/images/in-the-westwood/car-parking-1.jpg",
-      "/images/in-the-westwood/car-parking-2.jpg",
-      "/images/in-the-westwood/car-parking-3.jpg",
       "/images/in-the-westwood/two-wheeler-parking.jpg",
-      "/images/in-the-westwood/two-wheeler-parking-2.jpg"
+      "/images/in-the-westwood/car-parking-2.jpg",
+      "/images/in-the-westwood/two-wheeler-parking-2.jpg",
+      "/images/in-the-westwood/car-parking-3.jpg"
     ],
   },
 ];
