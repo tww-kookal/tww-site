@@ -204,7 +204,9 @@ export const GALLERY_IMAGES = [
   { src: "/images/around-the-westwood/grassland-kookal-2.jpg", category: "Grasslands", alt: "Grasslands of Kookal" },
   
   { src: "/images/in-the-westwood/the-westwood-night-view-1.jpg", category: "Night", alt: "Resort at Night" },
+  { src: "/images/in-the-westwood/campfire-2.jpg", category: "Night", alt: "Cozy Night Vibe" },
   { src: "/images/in-the-westwood/5.jpg", category: "Night", alt: "Cozy Night Vibe" },
+  { src: "/images/in-the-westwood/campfire-1.jpg", category: "Night", alt: "Night Vibes" },
 
   { src: "/images/around-the-westwood/temple-kuzhanthai-aandavar-poomparai-1.jpg", category: "Temple", alt: "Kuzhanthai Aandavar" },
   { src: "/images/around-the-westwood/temple-kuzhanthai-aandavar-poomparai-2.jpg", category: "Temple", alt: "Murugan Temple" },
