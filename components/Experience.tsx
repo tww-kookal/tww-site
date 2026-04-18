@@ -13,7 +13,6 @@ const EXPERIENCES = [
     images: [
       "/images/in-the-westwood/forest-view-morning.jpg",
       "/images/in-the-westwood/forest-view.jpg",
-      "/images/in-the-westwood/parking-view.jpg",
       "/images/in-the-westwood/forest-view-2.jpg",
       "/images/in-the-westwood/forest-view-3.jpg",
       "/images/in-the-westwood/misty-view.jpg"
@@ -60,6 +59,7 @@ const EXPERIENCES = [
     title: "Secure On-Site Parking",
     description: "Ample and safe space for your cars, motorcycles, and bikes within our campus.",
     images: [
+      "/images/in-the-westwood/car-parking-4.jpg",
       "/images/in-the-westwood/car-parking-1.jpg",
       "/images/in-the-westwood/two-wheeler-parking.jpg",
       "/images/in-the-westwood/car-parking-2.jpg",
