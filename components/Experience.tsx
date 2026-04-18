@@ -77,12 +77,19 @@ function ExperienceCard({ exp, index }: { exp: typeof EXPERIENCES[0], index: num
   useEffect(() => {
     if (exp.images.length <= 1) return;
 
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % exp.images.length);
-    }, 4000); // Change image every 4 seconds
+    // Stagger the start time of each card's image rotation based on index
+    const staggerDelay = index * 800; // Each card starts 800ms after the previous one
+    
+    const timeout = setTimeout(() => {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prev) => (prev + 1) % exp.images.length);
+      }, 4000); // Change image every 4 seconds
 
-    return () => clearInterval(interval);
-  }, [exp.images.length]);
+      return () => clearInterval(interval);
+    }, staggerDelay);
+
+    return () => clearTimeout(timeout);
+  }, [exp.images.length, index]);
 
   return (
     <motion.div
