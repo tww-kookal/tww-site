@@ -1,14 +1,39 @@
+"use client";
+
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import NextImage from "next/image";
 import { ROOMS, CONTACT_INFO } from "@/lib/constants";
-import { Check, ArrowRight, Phone, MessageCircle } from "lucide-react";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Check, ArrowRight, Phone, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function RoomsPage() {
+  const [currentImageIndex, setCurrentImageIndex] = useState<number[]>(() => ROOMS.map(() => 0));
+
+  const handlePrev = (roomIndex: number) => {
+    setCurrentImageIndex((prev) => prev.map((current, index) => {
+      if (index !== roomIndex) return current;
+      const length = ROOMS[roomIndex].images?.length ?? 1;
+      return current === 0 ? length - 1 : current - 1;
+    }));
+  };
+
+  const handleNext = (roomIndex: number) => {
+    setCurrentImageIndex((prev) => prev.map((current, index) => {
+      if (index !== roomIndex) return current;
+      const length = ROOMS[roomIndex].images?.length ?? 1;
+      return (current + 1) % length;
+    }));
+  };
+
+  const handleSelect = (roomIndex: number, imageIndex: number) => {
+    setCurrentImageIndex((prev) => prev.map((current, index) => index === roomIndex ? imageIndex : current));
+  };
+
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -17,7 +42,7 @@ export default function RoomsPage() {
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <NextImage
-            src="/photos/in-the-westwood/misty-view.jpg"
+            src="/images/in-the-westwood/misty-view.jpg"
             alt="Misty Mountain View"
             fill
             priority
@@ -45,8 +70,8 @@ export default function RoomsPage() {
               {/* Image */}
               <div className="w-full lg:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
                 <NextImage 
-                  src={room.image} 
-                  alt={room.name}
+                  src={room.images?.[currentImageIndex[index]] ?? room.image} 
+                  alt={`${room.name} image ${currentImageIndex[index] + 1}`}
                   fill
                   sizes="(max-w-1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -58,6 +83,38 @@ export default function RoomsPage() {
                   <div className="px-4 py-2 bg-accent text-white rounded-full text-[10px] font-bold tracking-widest uppercase shadow-lg w-fit">
                     {room.scarcity}
                   </div>
+                </div>
+
+                <div className="absolute inset-x-0 bottom-6 flex items-center justify-between px-4 sm:px-6 gap-4">
+                  <button
+                    type="button"
+                    className="rounded-full bg-black/60 p-3 text-white transition hover:bg-black/80"
+                    onClick={() => handlePrev(index)}
+                    aria-label={`Previous image for ${room.name}`}
+                  >
+                    <ChevronLeft size={20} />
+                  </button>
+
+                  <div className="hidden sm:flex items-center gap-2 overflow-x-auto px-2">
+                    {room.images?.map((_, imageIndex) => (
+                      <button
+                        key={imageIndex}
+                        type="button"
+                        onClick={() => handleSelect(index, imageIndex)}
+                        aria-label={`View image ${imageIndex + 1} for ${room.name}`}
+                        className={`h-2 w-2 rounded-full transition ${imageIndex === currentImageIndex[index] ? 'bg-white' : 'bg-white/40 hover:bg-white'}`}
+                      />
+                    ))}
+                  </div>
+
+                  <button
+                    type="button"
+                    className="rounded-full bg-black/60 p-3 text-white transition hover:bg-black/80"
+                    onClick={() => handleNext(index)}
+                    aria-label={`Next image for ${room.name}`}
+                  >
+                    <ChevronRight size={20} />
+                  </button>
                 </div>
               </div>
 

@@ -2,45 +2,50 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import NextImage from "next/image";
-import { EXPERIENCES } from "@/lib/constants";
-import { Trees, UtensilsCrossed, Flame, Moon, Compass, Sparkles } from "lucide-react";
+import { Trees, UtensilsCrossed, Flame, Moon, Compass, Sparkles, Wifi, ShieldCheck } from "lucide-react";
 
 const MORE_EXPERIENCES = [
   {
     title: "Nature Immersion",
     description: "Wake up to the sounds of the forest and the mist rolling over the hills. Guided nature walks available through the pristine Western Ghats.",
     icon: Trees,
-    image: "/photos/around-the-westwood/kookal-lake.jpg",
+    image: "/images/around-the-westwood/lake-kookal-1.jpg",
   },
   {
     title: "The Cafe",
     description: "Authentic, fresh, and homemade food that tastes just like home. Prepared with locally sourced organic ingredients from our mountain garden.",
     icon: UtensilsCrossed,
-    image: "/photos/cafe/cafe-dining-area-2.JPG",
+    image: "/images/cafe/food-cafe-3.jpg",
   },
   {
     title: "In the Westwood",
     description: "Explore our beautiful campus, with spaces for kids to play, mist-covered views, and magical nights under the stars.",
     icon: Flame,
-    image: "/photos/in-the-westwood/campus.jpg",
+    image: "/images/in-the-westwood/cycling-2.jpg",
+  },
+  {
+    title: "Always Connected",
+    description: "High-speed WiFi reaches every room, cafe, play area, and glamp, while CCTV-monitored outdoor areas keep the campus secure.",
+    icon: Wifi,
+    image: "/images/in-the-westwood/campfire-2.jpg",
+  },
+  {
+    title: "24/7 Safety & Security",
+    description: "Rest easy knowing our entire campus is under continuous CCTV surveillance. With round-the-clock monitoring of all outdoor areas, pathways, and common spaces, your safety and peace of mind are our top priority—whether you're on a staycation or workation.",
+    icon: ShieldCheck,
+    image: "/images/in-the-westwood/forest-view-2.jpg",
   },
   {
     title: "Stargazing",
     description: "With no light pollution, the night sky at Kookal is a celestial wonder. Witness the Milky Way in all its glory.",
     icon: Moon,
-    image: "/photos/in-the-westwood/the-westwood-night-view-3.jpg",
-  },
-  {
-    title: "Mountain Trekking",
-    description: "Explore hidden trails and panoramic viewpoints with our local guides who know every secret of these hills.",
-    icon: Compass,
-    image: "/photos/around-the-westwood/misty-road-kookal.jpg",
+    image: "/images/in-the-westwood/the-westwood-night-view-3.jpg",
   },
   {
     title: "Pure Relaxation",
     description: "Simply sit on your private balcony with a book and a cup of tea, and let the peace of the forest wash over you.",
     icon: Sparkles,
-    image: "/photos/cedar/cedar-deck-view-2.jpg",
+    image: "/images/cedar/cedar-deck-view-2.jpg",
   },
 ];
 
@@ -53,7 +58,7 @@ export default function ExperiencePage() {
       <section className="relative h-[50vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <NextImage
-            src="/photos/around-the-westwood/vegetation-view.jpg"
+            src="/images/around-the-westwood/vegetation-view.jpg"
             alt="Western Ghats Vegetation"
             fill
             priority

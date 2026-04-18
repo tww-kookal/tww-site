@@ -54,7 +54,7 @@ export default function ContactPage() {
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <NextImage
-            src="/photos/around-the-westwood/misty-road-kookal.jpg"
+            src="/images/around-the-westwood/misty-road-kookal.jpg"
             alt="Misty Road to Kookal"
             fill
             priority

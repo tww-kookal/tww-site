@@ -1,6 +1,6 @@
 "use client";
 
-import { Trees, UtensilsCrossed, ShieldCheck, Gamepad2, Flame } from "lucide-react";
+import { Trees, UtensilsCrossed, ShieldCheck, Gamepad2, Flame, Wifi } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import NextImage from "next/image";
 import { useState, useEffect } from "react";
@@ -11,12 +11,11 @@ const EXPERIENCES = [
     title: "Wake up to forest views",
     description: "Start your day with the mist-covered mountains and the sound of chirping birds.",
     images: [
-      "/photos/in-the-westwood/forest-view-morning.jpg",
-      "/photos/in-the-westwood/20251226_080451.jpg",
-      "/photos/in-the-westwood/20251226_082350.jpg",
-      "/photos/in-the-westwood/20251226_082511.jpg",
-      "/photos/in-the-westwood/20251226_082941.jpg",
-      "/photos/in-the-westwood/misty-view.jpg"
+      "/images/in-the-westwood/forest-view-morning.jpg",
+      "/images/in-the-westwood/forest-view.jpg",
+      "/images/in-the-westwood/forest-view-2.jpg",
+      "/images/in-the-westwood/forest-view-3.jpg",
+      "/images/in-the-westwood/misty-view.jpg"
     ],
   },
   {
@@ -24,11 +23,11 @@ const EXPERIENCES = [
     title: "Homemade food like home",
     description: "Authentic local flavors from The Cafe, prepared with fresh organic ingredients.",
     images: [
-      "/photos/cafe/cafe-dining-area-1.JPG",
-      "/photos/cafe/cafe-dining-area-2.JPG",
-      "/photos/cafe/cafe-dining-area-3.JPG",
-      "/photos/cafe/cafe-dining-area-4.JPG",
-      "/photos/cafe/cafe-front-view-1.jpg"
+      "/images/cafe/cafe-dining-area-1.JPG",
+      "/images/cafe/cafe-dining-area-2.JPG",
+      "/images/cafe/cafe-dining-area-3.JPG",
+      "/images/cafe/cafe-dining-area-4.JPG",
+      "/images/cafe/cafe-front-view-1.jpg"
     ],
   },
   {
@@ -36,14 +35,12 @@ const EXPERIENCES = [
     title: "Kids Play & Sports",
     description: "Swings, slides, basketball, and badminton courts for endless fun in a safe environment.",
     images: [
-      "/photos/in-the-westwood/kids-playing.jpg",
-      "/photos/in-the-westwood/kids-swing.jpg",
-      "/photos/play-area/badminton-1.JPG",
-      "/photos/play-area/badminton-2.JPG",
-      "/photos/play-area/badminton-3.JPG",
-      "/photos/play-area/badminton-4.JPG",
-      "/photos/play-area/badminton-5.JPG",
-      "/photos/play-area/badminton-6.JPG"
+      "/images/play-area/swing-1.jpeg",
+      "/images/play-area/bad-1.jpg",
+      "/images/play-area/kids-see-saw-2.jpeg",
+      "/images/play-area/bad-6.jpg",
+      "/images/play-area/basket-ball-1.jpeg",
+      "/images/play-area/play-slide-1.jpeg"
     ],
   },
   {
@@ -51,10 +48,10 @@ const EXPERIENCES = [
     title: "Private Campfire",
     description: "Cozy nights under the stars with private campfire areas for your family and friends.",
     images: [
-      "/photos/in-the-westwood/campfire-1.jpg",
-      "/photos/in-the-westwood/campfire-2.jpg",
-      "/photos/in-the-westwood/campfire-3.jpg",
-      "/photos/in-the-westwood/evening-view-campfire-1.jpg"
+      "/images/in-the-westwood/campfire-1.jpg",
+      "/images/in-the-westwood/campfire-2.jpg",
+      "/images/in-the-westwood/campfire-3.jpg",
+      "/images/in-the-westwood/evening-view-campfire-1.jpg"
     ],
   },
   {
@@ -62,11 +59,12 @@ const EXPERIENCES = [
     title: "Secure On-Site Parking",
     description: "Ample and safe space for your cars, motorcycles, and bikes within our campus.",
     images: [
-      "/photos/in-the-westwood/car-parking-1.jpg",
-      "/photos/in-the-westwood/car-parking-2.jpg",
-      "/photos/in-the-westwood/car-parking-3.jpg",
-      "/photos/in-the-westwood/two-wheeler-parking.jpg",
-      "/photos/in-the-westwood/two-wheeler-parking-2.jpg"
+      "/images/in-the-westwood/car-parking-4.jpg",
+      "/images/in-the-westwood/car-parking-1.jpg",
+      "/images/in-the-westwood/two-wheeler-parking.jpg",
+      "/images/in-the-westwood/car-parking-2.jpg",
+      "/images/in-the-westwood/two-wheeler-parking-2.jpg",
+      "/images/in-the-westwood/car-parking-3.jpg"
     ],
   },
 ];
@@ -77,12 +75,19 @@ function ExperienceCard({ exp, index }: { exp: typeof EXPERIENCES[0], index: num
   useEffect(() => {
     if (exp.images.length <= 1) return;
 
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % exp.images.length);
-    }, 4000); // Change image every 4 seconds
+    // Stagger the start time of each card's image rotation based on index
+    const staggerDelay = index * 800; // Each card starts 800ms after the previous one
+    
+    const timeout = setTimeout(() => {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prev) => (prev + 1) % exp.images.length);
+      }, 4000); // Change image every 4 seconds
 
-    return () => clearInterval(interval);
-  }, [exp.images.length]);
+      return () => clearInterval(interval);
+    }, staggerDelay);
+
+    return () => clearTimeout(timeout);
+  }, [exp.images.length, index]);
 
   return (
     <motion.div
