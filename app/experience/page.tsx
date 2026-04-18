@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import NextImage from "next/image";
-import { Trees, UtensilsCrossed, Flame, Moon, Compass, Sparkles, Wifi } from "lucide-react";
+import { Trees, UtensilsCrossed, Flame, Moon, Compass, Sparkles, Wifi, ShieldCheck } from "lucide-react";
 
 const MORE_EXPERIENCES = [
   {
@@ -27,6 +27,12 @@ const MORE_EXPERIENCES = [
     title: "Always Connected",
     description: "High-speed WiFi reaches every room, cafe, play area, and glamp, while CCTV-monitored outdoor areas keep the campus secure.",
     icon: Wifi,
+    image: "/images/in-the-westwood/campus.jpg",
+  },
+  {
+    title: "24/7 Safety & Security",
+    description: "Rest easy knowing our entire campus is under continuous CCTV surveillance. With round-the-clock monitoring of all outdoor areas, pathways, and common spaces, your safety and peace of mind are our top priority—whether you're on a staycation or workation.",
+    icon: ShieldCheck,
     image: "/images/in-the-westwood/campus.jpg",
   },
   {
