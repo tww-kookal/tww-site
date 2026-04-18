@@ -184,7 +184,6 @@ export const GALLERY_IMAGES = [
   { src: "/images/glamp/20251226_084957.jpg", category: "Cabins", alt: "Glamp Tent" },
   { src: "/images/in-the-westwood/2.jpg", category: "Cabins", alt: "Cabins in the Mist" },
   { src: "/images/cedar/cedar-deck-view.jpg", category: "Cabins", alt: "Panoramic View from Cedar" },
-
   
   { src: "/images/cafe/cafe-dining-area-1.JPG", category: "Food", alt: "Cafe Dining" },
   { src: "/images/cafe/barbeque.jpg", category: "Food", alt: "Barbeque" }, 
@@ -235,7 +234,6 @@ export const GALLERY_IMAGES = [
   { src: "/images/play-area/basket-ball-1.jpeg", category: "Activities", alt: "Basket Ball Court" },
   { src: "/images/play-area/play-slide-1.jpeg", category: "Activities", alt: "Kids Slide" },
   { src: "/images/play-area/play-area-3.jpeg", category: "Activities", alt: "Kids Ladder" },
-  
 
 ];
 
