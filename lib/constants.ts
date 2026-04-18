@@ -114,7 +114,7 @@ export const ROOMS = [
     name: "Glamp",
     category: "Glamping",
     description: "A cozy 100sqft glamping tent for a true nature immersion. Features two single beds and a private deck, with a separate private bathroom for your convenience.",
-    image: "/images/glamp/20251226_084957.jpg",
+    image: "/images/glamp/20250315_204224.jpg",
     images: [
       "/images/glamp/glamp-front-2.jpg",
       "/images/glamp/20251226_084957.jpg",
