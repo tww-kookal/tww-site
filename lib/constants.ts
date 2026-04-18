@@ -199,15 +199,15 @@ export const GALLERY_IMAGES = [
   { src: "/images/around-the-westwood/falls-poomparai-1.jpg", category: "Water Falls", alt: "Poomparai Falls" },
   { src: "/images/around-the-westwood/falls-aanaimutti-1.png", category: "Water Falls", alt: "Aanai Mutti Falls" },
 
-  { src: "/images/around-the-westwood/grasslands-kookal-1.jpg", category: "Grasslands", alt: "Grasslands of Kookal" },
-  { src: "/images/around-the-westwood/grasslands-mannavanur-1.jpg", category: "Grasslands", alt: "Greenery of Mannavanur" },
-  { src: "/images/around-the-westwood/grasslands-kookal-2.jpg", category: "Grasslands", alt: "Grasslands of Kookal" },
+  { src: "/images/around-the-westwood/grassland-kookal-1.jpg", category: "Grasslands", alt: "Grasslands of Kookal" },
+  { src: "/images/around-the-westwood/grassland-mannavanur-1.jpg", category: "Grasslands", alt: "Greenery of Mannavanur" },
+  { src: "/images/around-the-westwood/grassland-kookal-2.jpg", category: "Grasslands", alt: "Grasslands of Kookal" },
   
   { src: "/images/in-the-westwood/the-westwood-night-view-1.jpg", category: "Night", alt: "Resort at Night" },
   { src: "/images/in-the-westwood/5.jpg", category: "Night", alt: "Cozy Night Vibe" },
 
-  { src: "/images/in-the-westwood/temple-kuzhanthai-aandavar-poomparai-1.jpg", category: "Temple", alt: "Kuzhanthai Aandavar" },
-  { src: "/images/in-the-westwood/temple-kuzhanthai-aandavar-poomparai-2.jpg", category: "Temple", alt: "Murugan Temple" },
+  { src: "/images/around-the-westwood/temple-kuzhanthai-aandavar-poomparai-1.jpg", category: "Temple", alt: "Kuzhanthai Aandavar" },
+  { src: "/images/around-the-westwood/temple-kuzhanthai-aandavar-poomparai-2.jpg", category: "Temple", alt: "Murugan Temple" },
 
   { src: "/images/around-the-westwood/valley-view-1.jpg", category: "Valley", alt: "Valley of Western Ghats" },
   { src: "/images/around-the-westwood/valley-view-2.jpg", category: "Valley", alt: "Valley of Western Ghats" },
