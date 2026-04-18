@@ -42,7 +42,7 @@ export default function RoomsPage() {
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <NextImage
-            src="/photos/in-the-westwood/misty-view.jpg"
+            src="/images/in-the-westwood/misty-view.jpg"
             alt="Misty Mountain View"
             fill
             priority

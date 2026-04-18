@@ -29,7 +29,7 @@ export const ROOMS = [
     name: "Cedar",                      // Display name
     category: "Individual Cabin",       // Room type/category
     description: "A cathedral styled..." // Full description (1-2 paragraphs)
-    image: "/photos/cedar/cedar-outer-view-1.JPG",  // Room image path
+    image: "/images/cedar/cedar-outer-view-1.JPG",  // Room image path
     features: [                         // Key amenities list
       "Max Occupancy: 8 Adults",
       "Private Campfire Area",
@@ -67,7 +67,7 @@ const message = `I'm interested in ${room.name} at The Westwood. Please share pr
   name: "Oak",
   category: "Individual Cabin",
   description: "A new oak cabin with modern amenities...",
-  image: "/photos/oak/oak-view.jpg",
+  image: "/images/oak/oak-view.jpg",
   features: [
     "Max Occupancy: 6 Adults",
     "Private Campfire Area",
@@ -103,7 +103,7 @@ export const EXPERIENCES = [
     title: "Nature Immersion",                    // Display title
     description: "Wake up to the sounds...",      // Description text
     icon: "Trees",                                // Lucide icon name
-    image: "/photos/around-the-westwood/kookal-lake.jpg", // Image path
+    image: "/images/around-the-westwood/kookal-lake.jpg", // Image path
   },
   // ... more experiences
 ]
@@ -116,7 +116,7 @@ export const EXPERIENCES = [
   title: "Wellness & Yoga",
   description: "Start your day with guided yoga sessions overlooking the forest...",
   icon: "Leaf",  // From Lucide icons
-  image: "/photos/wellness/yoga-session.jpg",
+  image: "/images/wellness/yoga-session.jpg",
 }
 ```
 
@@ -222,15 +222,15 @@ export const RESORT_LOCATION = "Kookal, Kodaikanal, Tamilnadu, India";
 
 ```typescript
 export const LOGOS = {
-  light: "/photos/logo/6.png",              // For dark backgrounds
-  dark: "/photos/logo/westwoodlogo2.png",   // For light backgrounds
-  square: "/photos/logo/0.jpg",             // Square format
-  icon: "/photos/logo/w-logo.jpg",          // Favicon-sized
+  light: "/images/logo/6.png",              // For dark backgrounds
+  dark: "/images/logo/westwoodlogo2.png",   // For light backgrounds
+  square: "/images/logo/0.jpg",             // Square format
+  icon: "/images/logo/w-logo.jpg",          // Favicon-sized
 }
 ```
 
 **To Update Logo**:
-1. Add new logo image to `/public/photos/logo/`
+1. Add new logo image to `/public/images/logo/`
 2. Update path in `LOGOS` object
 3. Automatically updates in Navbar and throughout site
 
@@ -240,7 +240,7 @@ export const LOGOS = {
 
 ### Image Directory Structure
 ```
-public/photos/
+public/images/
 ├── logo/                      # Brand logos
 │   ├── 6.png (light)
 │   ├── westwoodlogo2.png (dark)
@@ -260,14 +260,14 @@ public/photos/
 
 **Current**: Each room has 1 main image in `ROOMS.image`
 
-**File Path Format**: `/photos/[room]/[image-name].jpg`
+**File Path Format**: `/images/[room]/[image-name].jpg`
 
 **Example**: 
-- Cedar: `/photos/cedar/cedar-outer-view-1.JPG`
-- Pine: `/photos/pine/pine-front-view.jpg`
+- Cedar: `/images/cedar/cedar-outer-view-1.JPG`
+- Pine: `/images/pine/pine-front-view.jpg`
 
 **To Change Room Image**:
-1. Add new image to `/public/photos/[room]/`
+1. Add new image to `/public/images/[room]/`
 2. Update `image` field in `ROOMS` array, `lib/constants.ts`
 3. Image updates on site automatically
 
@@ -385,7 +385,7 @@ git push origin main
 ## ⚠️ Common Mistakes to Avoid
 
 1. **Forgetting Quotes**: `"Cedar"` not `Cedar`
-2. **Wrong Image Path**: Must start with `/photos/`
+2. **Wrong Image Path**: Must start with `/images/`
 3. **Inconsistent IDs**: Use lowercase, no spaces (cedar, not Cedar)
 4. **Missing Commas**: Arrays need commas between items
 5. **Broken URLs**: Verify all hrefs exist

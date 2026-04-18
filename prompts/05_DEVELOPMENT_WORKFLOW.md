@@ -60,7 +60,7 @@ lib/
 ├── constants.ts          # ⭐ ALL RESORT DATA (rooms, experiences, etc)
 └── utils.ts              # Helper functions
 
-public/photos/            # Static images
+public/images/            # Static images
 ├── logo/                 # Logo variants
 ├── cedar/, pine/, etc.   # Room images
 └── cafe/, around-the-westwood/, etc.
@@ -414,7 +414,7 @@ pnpm build
 
 | Issue | Cause | Fix |
 |-------|-------|-----|
-| Image not showing | Wrong path | Path must start with `/photos/` |
+| Image not showing | Wrong path | Path must start with `/images/` |
 | Component not updating | Cache issue | Hard refresh (Ctrl+Shift+R) |
 | API error 500 | Validation failed | Check console logs on server |
 | Type errors | Missing interface | Define interface in component |
@@ -467,7 +467,7 @@ style: Update brand colors to match new logo
 import Image from "next/image"
 
 <Image
-  src="/photos/cedar/view.jpg"
+  src="/images/cedar/view.jpg"
   alt="Cedar room view"
   width={800}
   height={600}

@@ -10,37 +10,37 @@ const MORE_EXPERIENCES = [
     title: "Nature Immersion",
     description: "Wake up to the sounds of the forest and the mist rolling over the hills. Guided nature walks available through the pristine Western Ghats.",
     icon: Trees,
-    image: "/photos/around-the-westwood/kookal-lake.jpg",
+    image: "/images/around-the-westwood/kookal-lake.jpg",
   },
   {
     title: "The Cafe",
     description: "Authentic, fresh, and homemade food that tastes just like home. Prepared with locally sourced organic ingredients from our mountain garden.",
     icon: UtensilsCrossed,
-    image: "/photos/cafe/cafe-dining-area-2.JPG",
+    image: "/images/cafe/cafe-dining-area-2.JPG",
   },
   {
     title: "In the Westwood",
     description: "Explore our beautiful campus, with spaces for kids to play, mist-covered views, and magical nights under the stars.",
     icon: Flame,
-    image: "/photos/in-the-westwood/campus.jpg",
+    image: "/images/in-the-westwood/campus.jpg",
   },
   {
     title: "Stargazing",
     description: "With no light pollution, the night sky at Kookal is a celestial wonder. Witness the Milky Way in all its glory.",
     icon: Moon,
-    image: "/photos/in-the-westwood/the-westwood-night-view-3.jpg",
+    image: "/images/in-the-westwood/the-westwood-night-view-3.jpg",
   },
   {
     title: "Mountain Trekking",
     description: "Explore hidden trails and panoramic viewpoints with our local guides who know every secret of these hills.",
     icon: Compass,
-    image: "/photos/around-the-westwood/misty-road-kookal.jpg",
+    image: "/images/around-the-westwood/misty-road-kookal.jpg",
   },
   {
     title: "Pure Relaxation",
     description: "Simply sit on your private balcony with a book and a cup of tea, and let the peace of the forest wash over you.",
     icon: Sparkles,
-    image: "/photos/cedar/cedar-deck-view-2.jpg",
+    image: "/images/cedar/cedar-deck-view-2.jpg",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function ExperiencePage() {
       <section className="relative h-[50vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <NextImage
-            src="/photos/around-the-westwood/vegetation-view.jpg"
+            src="/images/around-the-westwood/vegetation-view.jpg"
             alt="Western Ghats Vegetation"
             fill
             priority

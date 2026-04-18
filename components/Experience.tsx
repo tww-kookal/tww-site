@@ -11,12 +11,12 @@ const EXPERIENCES = [
     title: "Wake up to forest views",
     description: "Start your day with the mist-covered mountains and the sound of chirping birds.",
     images: [
-      "/photos/in-the-westwood/forest-view-morning.jpg",
-      "/photos/in-the-westwood/20251226_080451.jpg",
-      "/photos/in-the-westwood/20251226_082350.jpg",
-      "/photos/in-the-westwood/20251226_082511.jpg",
-      "/photos/in-the-westwood/20251226_082941.jpg",
-      "/photos/in-the-westwood/misty-view.jpg"
+      "/images/in-the-westwood/forest-view-morning.jpg",
+      "/images/in-the-westwood/20251226_080451.jpg",
+      "/images/in-the-westwood/20251226_082350.jpg",
+      "/images/in-the-westwood/20251226_082511.jpg",
+      "/images/in-the-westwood/20251226_082941.jpg",
+      "/images/in-the-westwood/misty-view.jpg"
     ],
   },
   {
@@ -24,11 +24,11 @@ const EXPERIENCES = [
     title: "Homemade food like home",
     description: "Authentic local flavors from The Cafe, prepared with fresh organic ingredients.",
     images: [
-      "/photos/cafe/cafe-dining-area-1.JPG",
-      "/photos/cafe/cafe-dining-area-2.JPG",
-      "/photos/cafe/cafe-dining-area-3.JPG",
-      "/photos/cafe/cafe-dining-area-4.JPG",
-      "/photos/cafe/cafe-front-view-1.jpg"
+      "/images/cafe/cafe-dining-area-1.JPG",
+      "/images/cafe/cafe-dining-area-2.JPG",
+      "/images/cafe/cafe-dining-area-3.JPG",
+      "/images/cafe/cafe-dining-area-4.JPG",
+      "/images/cafe/cafe-front-view-1.jpg"
     ],
   },
   {
@@ -36,14 +36,14 @@ const EXPERIENCES = [
     title: "Kids Play & Sports",
     description: "Swings, slides, basketball, and badminton courts for endless fun in a safe environment.",
     images: [
-      "/photos/in-the-westwood/kids-playing.jpg",
-      "/photos/in-the-westwood/kids-swing.jpg",
-      "/photos/play-area/badminton-1.JPG",
-      "/photos/play-area/badminton-2.JPG",
-      "/photos/play-area/badminton-3.JPG",
-      "/photos/play-area/badminton-4.JPG",
-      "/photos/play-area/badminton-5.JPG",
-      "/photos/play-area/badminton-6.JPG"
+      "/images/in-the-westwood/kids-playing.jpg",
+      "/images/in-the-westwood/kids-swing.jpg",
+      "/images/play-area/badminton-1.JPG",
+      "/images/play-area/badminton-2.JPG",
+      "/images/play-area/badminton-3.JPG",
+      "/images/play-area/badminton-4.JPG",
+      "/images/play-area/badminton-5.JPG",
+      "/images/play-area/badminton-6.JPG"
     ],
   },
   {
@@ -51,10 +51,10 @@ const EXPERIENCES = [
     title: "Private Campfire",
     description: "Cozy nights under the stars with private campfire areas for your family and friends.",
     images: [
-      "/photos/in-the-westwood/campfire-1.jpg",
-      "/photos/in-the-westwood/campfire-2.jpg",
-      "/photos/in-the-westwood/campfire-3.jpg",
-      "/photos/in-the-westwood/evening-view-campfire-1.jpg"
+      "/images/in-the-westwood/campfire-1.jpg",
+      "/images/in-the-westwood/campfire-2.jpg",
+      "/images/in-the-westwood/campfire-3.jpg",
+      "/images/in-the-westwood/evening-view-campfire-1.jpg"
     ],
   },
   {
@@ -62,11 +62,11 @@ const EXPERIENCES = [
     title: "Secure On-Site Parking",
     description: "Ample and safe space for your cars, motorcycles, and bikes within our campus.",
     images: [
-      "/photos/in-the-westwood/car-parking-1.jpg",
-      "/photos/in-the-westwood/car-parking-2.jpg",
-      "/photos/in-the-westwood/car-parking-3.jpg",
-      "/photos/in-the-westwood/two-wheeler-parking.jpg",
-      "/photos/in-the-westwood/two-wheeler-parking-2.jpg"
+      "/images/in-the-westwood/car-parking-1.jpg",
+      "/images/in-the-westwood/car-parking-2.jpg",
+      "/images/in-the-westwood/car-parking-3.jpg",
+      "/images/in-the-westwood/two-wheeler-parking.jpg",
+      "/images/in-the-westwood/two-wheeler-parking-2.jpg"
     ],
   },
 ];

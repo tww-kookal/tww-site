@@ -25,7 +25,7 @@ export default function GalleryPage() {
       <section className="relative h-[40vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <NextImage
-            src="/photos/in-the-westwood/the-westwood-night-view-1.jpg"
+            src="/images/in-the-westwood/the-westwood-night-view-1.jpg"
             alt="The Westwood Night View"
             fill
             priority

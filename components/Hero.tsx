@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <NextImage
-          src="/photos/in-the-westwood/the-westwood-day-view-1.jpg"
+          src="/images/in-the-westwood/the-westwood-day-view-1.jpg"
           alt="The Westwood Resort Day View"
           fill
           priority

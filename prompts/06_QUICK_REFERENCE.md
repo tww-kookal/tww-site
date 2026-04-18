@@ -21,7 +21,7 @@ git push origin main     # Push (triggers Vercel deploy)
 ### File Operations
 ```bash
 # Add new room → Edit lib/constants.ts → ROOMS array
-# Update logo → Add to /public/photos/logo/ → Update LOGOS object
+# Update logo → Add to /public/images/logo/ → Update LOGOS object
 # New page → Create app/[name]/page.tsx → Add to NAV_LINKS
 ```
 
@@ -44,8 +44,8 @@ pnpm dev --port 3001
 
 ### Issue: Images not loading in development
 **Solution**:
-1. Check image path starts with `/photos/`
-2. Verify image exists in `/public/photos/` directory
+1. Check image path starts with `/images/`
+2. Verify image exists in `/public/images/` directory
 3. Clear browser cache (Ctrl+Shift+Delete)
 4. Restart dev server
 
@@ -94,8 +94,8 @@ pnpm lint --fix     # Auto-fix what's possible
 | Components | `components/` directory |
 | Styling system | `tailwind.config.ts` |
 | Global styles | `app/globals.css` |
-| Images | `/public/photos/` |
-| Logo files | `/public/photos/logo/` |
+| Images | `/public/images/` |
+| Logo files | `/public/images/logo/` |
 
 ---
 
@@ -113,7 +113,7 @@ lib/constants.ts → Find TESTIMONIALS → Add new object to array
 
 ### Change Logo
 ```
-1. Add image to /public/photos/logo/
+1. Add image to /public/images/logo/
 2. Update LOGOS object in lib/constants.ts
 3. Update icon path in layout.tsx if needed
 ```

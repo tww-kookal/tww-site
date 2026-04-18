@@ -63,7 +63,7 @@ tww-site/
 ├── lib/
 │   ├── constants.ts              # ALL resort data (rooms, experiences, testimonials)
 │   └── utils.ts                  # Helper functions
-├── public/photos/                # Static images
+├── public/images/                # Static images
 │   ├── logo/                     # Brand logos
 │   ├── cedar/, pine/, teak/, maple/, glamp/  # Room images
 │   ├── cafe/                     # Restaurant images
