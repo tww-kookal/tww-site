@@ -15,7 +15,7 @@ const MORE_EXPERIENCES = [
     title: "The Cafe",
     description: "Authentic, fresh, and homemade food that tastes just like home. Prepared with locally sourced organic ingredients from our mountain garden.",
     icon: UtensilsCrossed,
-    image: "/images/cafe/food-cafe-3.JPG",
+    image: "/images/cafe/food-cafe-3.jpg",
   },
   {
     title: "In the Westwood",
