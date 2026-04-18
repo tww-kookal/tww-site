@@ -2,8 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import NextImage from "next/image";
-import { EXPERIENCES } from "@/lib/constants";
-import { Trees, UtensilsCrossed, Flame, Moon, Compass, Sparkles } from "lucide-react";
+import { Trees, UtensilsCrossed, Flame, Moon, Compass, Sparkles, Wifi } from "lucide-react";
 
 const MORE_EXPERIENCES = [
   {
@@ -22,6 +21,12 @@ const MORE_EXPERIENCES = [
     title: "In the Westwood",
     description: "Explore our beautiful campus, with spaces for kids to play, mist-covered views, and magical nights under the stars.",
     icon: Flame,
+    image: "/images/in-the-westwood/campus.jpg",
+  },
+  {
+    title: "Always Connected",
+    description: "High-speed WiFi reaches every room, cafe, play area, and glamp, while CCTV-monitored outdoor areas keep the campus secure.",
+    icon: Wifi,
     image: "/images/in-the-westwood/campus.jpg",
   },
   {

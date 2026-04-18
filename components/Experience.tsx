@@ -1,6 +1,6 @@
 "use client";
 
-import { Trees, UtensilsCrossed, ShieldCheck, Gamepad2, Flame } from "lucide-react";
+import { Trees, UtensilsCrossed, ShieldCheck, Gamepad2, Flame, Wifi } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import NextImage from "next/image";
 import { useState, useEffect } from "react";
@@ -65,6 +65,16 @@ const EXPERIENCES = [
       "/images/in-the-westwood/car-parking-2.jpg",
       "/images/in-the-westwood/two-wheeler-parking-2.jpg",
       "/images/in-the-westwood/car-parking-3.jpg"
+    ],
+  },
+  {
+    icon: Wifi,
+    title: "Always Connected",
+    description: "High-speed campus WiFi reaches rooms, cafe, play area, and glamp so guests can stay connected during staycations or workations.",
+    images: [
+      "/images/in-the-westwood/campus.jpg",
+      "/images/glamp/20251226_084957.jpg",
+      "/images/cafe/cafe-dining-area-1.JPG"
     ],
   },
 ];

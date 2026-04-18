@@ -149,7 +149,7 @@ export const EXPERIENCES = [
   },
   {
     title: "Safe & Fun Campus",
-    description: "Ample secure parking for cars and motorcycles. Kids will love our play area with swings, slides, basketball, and badminton courts. Every corner is safe and family-friendly.",
+    description: "Ample secure parking for cars and motorcycles, CCTV-monitored outdoor areas, and a family-friendly play zone. WiFi is available throughout the campus, from rooms to cafe and glamp.",
     icon: "ShieldCheck",
     image: "/images/in-the-westwood/kids-playing.jpg",
   },
