@@ -1,6 +1,9 @@
 export const RESORT_NAME = "The Westwood";
 export const RESORT_LOCATION = "Kookal, Kodaikanal, Tamilnadu, India";
 
+// Google Analytics
+export const GA_TRACKING_ID = "G-117MQYHW6V";
+
 export const LOGOS = {
   light: "/images/logo/6.png", // Transparent logo for dark backgrounds
   dark: "/images/logo/westwoodlogo2.png", // Main logo for light backgrounds
