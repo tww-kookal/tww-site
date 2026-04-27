@@ -58,7 +58,7 @@ export default function ExperiencePage() {
       <section className="relative h-[50vh] flex items-center justify-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <NextImage
-            src="/images/around-the-westwood/vegetation-view.jpg"
+            src="/images/around-the-westwood/falls-aanaimutti-1.png"
             alt="Western Ghats Vegetation"
             fill
             priority
