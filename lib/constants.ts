@@ -226,7 +226,7 @@ export const GALLERY_IMAGES = [
   { src: "/images/play-area/bad-2.jpg", category: "Activities", alt: "Badminton Court" },
   { src: "/images/play-area/bad-3.jpg", category: "Activities", alt: "Badminton Court" },
   { src: "/images/play-area/bad-4.jpg", category: "Activities", alt: "Badminton Court" },
-  { src: "/images/play-area/bad-5.jpg", category: "Activities", alt: "Badminton Court" },
+  { src: "/images/play-area/bad-1.jpg", category: "Activities", alt: "Badminton Court" },
   { src: "/images/play-area/bad-6.jpg", category: "Activities", alt: "Badminton Court" },
   { src: "/images/play-area/kids-see-saw-2.jpeg", category: "Activities", alt: "Kids Fun" },
   { src: "/images/play-area/kids-see-saw-1.jpeg", category: "Activities", alt: "Play area for Kids" },
