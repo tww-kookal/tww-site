@@ -22,26 +22,22 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      
-      if (response.ok) {
-        setIsSuccess(true);
-        setFormData({ name: "", phone: "", message: "" });
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
+
+    const whatsappNumber = CONTACT_INFO.whatsapp.replace(/\D/g, "");
+
+    const text = [
+      "New Enquiry - The Westwood",
+      "",
+      `Name: ${formData.name}`,
+      `Phone: ${formData.phone}`,
+      `Message: ${formData.message}`,
+    ].join("\n");
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
   const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsapp.replace(/\s+/g, '')}?text=Hi, I'm interested in booking a stay at The Westwood.`;
