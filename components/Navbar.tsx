@@ -30,17 +30,32 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link 
           href="/" 
-          className="relative h-12 w-40 transition-opacity duration-300 hover:opacity-90"
+          className="flex items-center gap-4 transition-opacity duration-300 hover:opacity-90"
         >
-          <NextImage
-            src={scrolled ? LOGOS.dark : LOGOS.light}
-            alt={RESORT_NAME}
-            fill
-            sizes="(max-w-768px) 100vw, 160px"
-            className="object-contain object-left"
-            priority
-            loading="eager"
-          />
+          <div className="relative h-12 w-40">
+            <img
+              src={scrolled ? LOGOS.dark : LOGOS.light}
+              alt={RESORT_NAME}
+              className="object-contain object-left w-full h-full"
+              loading="eager"
+            />
+          </div>
+          <div className="relative h-12 w-auto">
+            <img
+              src={LOGOS.incredibleIndia}
+              alt="Incredible India"
+              className="object-contain h-full"
+              loading="eager"
+            />
+          </div>
+          <div className="relative h-12 w-auto">
+            <img
+              src={LOGOS.westernGhats}
+              alt="Western Ghats"
+              className="object-contain h-full"
+              loading="eager"
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
