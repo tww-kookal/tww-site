@@ -9,6 +9,8 @@ export const LOGOS = {
   dark: "/images/logo/westwoodlogo2.png", // Main logo for light backgrounds
   square: "/images/logo/0.jpg",
   icon: "/images/logo/w-logo.jpg",
+  incredibleIndia: "/images/incredible-india-logo.svg",
+  westernGhats: "/images/western-ghats.png",
 };
 
 export const NAV_LINKS = [
